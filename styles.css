@@ -5,20 +5,87 @@
     background: #DCDCDC;
 }
 #cont-padre{
-    height: 630px;
-    background: #DCDCDC;
-    position: relative;
+    display: grid;
+    gap: 20px;
 }
-.main{
-    width: 100%;
-    height: 80%;
+.banner{
+  
     background: #FFFFFF;
     border-radius: 20px;
+}
+.products{
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+.products h2{
+    font-family: "Public Sans", sans-serif;   
+    padding: 11px;
+}
+.products-body{
+    display: flex;
+}
+.cart{
+    font-family: "Bebas Neue", sans-serif;
+    display: block;
+    margin: 0 auto;
+
+}
+.cart:hover{
+    
+}
+.cart span,p{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.galeria{
+    margin: 20px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.publicidad{
+    overflow: hidden;
+    background: white;
+    border-radius: 20px;
+}
+.publicidad #ms{
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    top: 58px;
+    position: absolute;
+    left: 5%;
+    font-size: 27px;
+}
+.publicidad #ds{
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    top: 35px;
+    position: absolute;
+    left: 72%;
+    font-size: 60px;
+}
+.publicidad-body .text{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+}
+.publicidad-body .text h1{
+    font-size: 50px;
+}
+.publicidad-body .text p{
+    font-size: 25px;
+}
+.publicidad-body{
+    align-items: center;
+
 }
 .title{
     height: 90px;
 }
-.main .title h1{
+.banner .title h1{
     text-align: center;
     font-size: 77px;
     color: #a59b9ba1;
@@ -28,10 +95,7 @@
     /* background: rebeccapurple; */
     width: 110%;
 }
-.section-banner{
-height: 80%;
-/*background: red;*/
-}
+
 .cont-linea{
     display: flex;
     height: 14px;
@@ -51,19 +115,20 @@ height: 80%;
 .conth2{
     display: grid;
     align-content: center;
-    height:21%;
+    height:90px;
 }
 .descrip{
     font-size: 12px;
     font-family: "Public Sans", sans-serif;   
      letter-spacing: 0px;
-     height:29%;
+     height:128px;
 }
 .info{
     height: 100%;
 
 }
 .info p{
+    text-align: left;
     margin: 0px;
     font-weight: bold;
     font-family: "Public Sans", sans-serif;
@@ -79,6 +144,7 @@ height: 80%;
     list-style: none;
     height: 34px;
 }
+
 .btn-blanco{
     color: rgba(170, 168, 168, 0.548);
     box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.5);
@@ -154,6 +220,17 @@ height: 80%;
     color: white;
     border-radius: 40px;
     width: 85.5px;
+    transition: 300ms;
+}
+.btn-right:hover{
+    width: 86.5px;
+    height: 35;
+    box-shadow:-2px 5px 8px 2px rgb(0 0 0 / 47%);
+}
+.btn-left:hover{
+    width: 86.5px;
+    height: 35;
+    box-shadow:-2px 5px 8px 2px rgb(0 0 0 / 47%);
 }
 .btn-right img,
 .btn-left img{
@@ -164,6 +241,12 @@ height: 80%;
     color: white;
     border-radius: 40px;
     width:171px;
+    transition: 300ms;
+}
+.btn-next:hover{
+    width:175px;
+    height: 35px;
+    box-shadow:-2px 5px 8px 2px rgb(0 0 0 / 47%);
 }
 .btn-back{
     background: black;
@@ -193,9 +276,14 @@ height: 80%;
     display: inline;
     font-family: "Bebas Neue", sans-serif;
 }
+
 .nav ul li a {
     color: black;
     text-decoration: none;
+}
+.nav ul li a:hover{
+    color: rgb(85, 197, 128);
+
 }
 .icon-contain{
     display: flex;
@@ -208,4 +296,22 @@ height: 80%;
 /**/
 .slider-control ul li:nth-child(1){
     border-bottom-color: rgba(110, 111, 111, 0.51);
+}
+footer{
+    background: black;
+    margin-top: 20px;
+    height: 250px;
+    display: flex;
+    color: white;
+    font-family: "Public Sans", sans-serif;
+    justify-content: center;
+
+}
+footer ul{
+    width: 17%;
+    font-size: 12px;
+    white-space: pre-line;
+    list-style: none;
+    align-self: center;
+
 }

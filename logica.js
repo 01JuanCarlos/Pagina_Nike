@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    //libreria para animacion
+    AOS.init({
+        duration:1500
+    });
+    //---------
     var contador=1;
     var sumar=0;
     //imagenes slider

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="lib/bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <script src="lib/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
@@ -42,12 +44,11 @@
               <button class="btn-right"><img src="assets/flecha-right.png" alt=""></button>
             </div>
           </div>
-        <div  class="main">
-            
+
+        <section  class="banner"  data-aos="fade-up"> 
            <div class="title"> <h1 class="title-big">AIR JORDAN 1 LOW SE 
             CHINESE NEW YEAR</h1></div>
-            <section class="section-banner row">
-                
+            <div class="body-section-banner row">         
                 <div class="content-slider col-6">
                   <div class="slider">
                     <div class="img1-conten"><img id="img-sld-1"  src="assets/z2-big.png" alt=""></div>
@@ -68,7 +69,7 @@
                       <ul>
                         <li aria-disabled="true" class="col-3"><img id="control1"  src="assets/z1.png" alt=""></li> 
                         <li aria-disabled="false" class="col-3"><img id="control2" src="assets/z2.png" alt=""></li>
-                         <li aria-disabled="false"class="col-3"><img id="control3" src="assets/z4.png" alt=""></li>
+                        <li aria-disabled="false"class="col-3"><img id="control3" src="assets/z4.png" alt=""></li>
                         <li aria-disabled="false" class="col-3"><img id="control4" src="assets/z3.png" alt=""></li> 
                       </ul>
                       <div class="cont-linea"><span class="linea"></span></div>
@@ -82,9 +83,77 @@
                     </div>
                 </div>
                 
-            </section>
-           
-        </div>
+              </div>   
+        </section>
+
+        <section class="products"  data-aos="fade-right" >
+          <h2>Woman’s Shoes</h2>
+            <div class="products-body">
+              <div id="cart1" class=" cart" data-aos="flip-right">
+                <img src="assets/produc1.png" alt="">
+                <span>NIKE AIR FORCE 1 PREMIUM</span>
+                <p>S/719.90</p>
+              </div>
+              <div id="cart2" class=" cart" data-aos="flip-right">
+                <img src="assets/produc2.png" alt="">
+                <span>NIKE AIR FORCE 1 SHADOW</span>
+                <p>S/438.90</p>
+              </div>
+              <div id="cart3" class=" cart" data-aos="flip-right">
+                <img src="assets/produc3.png" alt="">
+                <span>Nike AIR force 2 SHADOW</span>
+                <p>S/678.90</p>
+              </div>
+              <div id="cart4" class=" cart" data-aos="flip-right">
+                <img src="assets/produc4.png" alt="">
+                <span>NIKE AIR FORCE 1 LITE</span>
+                <p>S/485.90</p>
+              </div>
+            </div>
+            <div class="galeria">
+              <img src="assets/n1.png" alt="" data-aos="flip-right">
+              <img src="assets/n2.png" alt="" data-aos="flip-right">
+              <img src="assets/n3.png" alt="" data-aos="flip-right">
+            </div>
+        </section>
+
+        <section class="publicidad " data-aos="fade-left">
+          <span id="ms">Exclusivo para miembros</span>
+          <span id="ds">10% OFF</span>
+          <img class="col-12" src="assets/haaland.png" alt="">
+          <div class="publicidad-body row">
+            <img class="col-4" src="assets/zhaaland2.png" alt="" data-aos="flip-right">
+            <div class="col-4 text">
+              <h1>Precisión sobresaliente</h1>
+              <p>S/1,099.99</p>
+            </div>
+            <img class="col-4" src="assets/zhaaland.png" alt="" data-aos="flip-left" >
+          </div>  
+        </section>
     </div>
+    
+    <footer>
+          <ul>
+            <h4>Destacados</h4>
+            <li>Zapatillas Air Force 1</li>
+            <li>Zapatillas Jordan</li>
+            <li>Zapatillas Air Max</li>
+            <li>Zapatillas Pegasus</li>
+          </ul>
+          <ul>
+            <h4>Zapatillas</h4>
+            <li>Todo Zapatillas</li>
+            <li>Zapatillas Urbanas</li>
+            <li>Zapatillas Jordan</li>
+            <li>Zapatillas Running</li>
+          </ul>
+          <ul>
+            <h4>Todos Accesorios</h4>
+            <li>Gorras</li>
+            <li>Medias</li>
+            <li>Canilleras, guantes y 
+              pelotas.</li>
+          </ul>
+    </footer>
 </body>
 </html>
